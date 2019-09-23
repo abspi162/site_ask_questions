@@ -1,3 +1,9 @@
+<?php
+require "libs/rb.php";
+R::setup( 'mysql:host=localhost;dbname=askquestions',
+    'root', '' );
+session_start();
+?>
 <!DOCTYPE html>
 <html land="en">
 <head>
@@ -14,23 +20,33 @@
 <body>
 	<header>
 		<div id="logo" >
-			<a href="file:///C:/Users/Dmytro/Downloads/gitTutorial/index.html" title="На головну">
+			<a href="index.php" title="На головну">
 				<img src="img/qr.jpg" title="" alt="Питання - відповідь">
 				<span>Питання - відповідь</span>
 			</a>
 		</div>
+        <?php
+        if (isset($_SESSION['logged_user'])) : ?>
+        Привіт, <?php echo $_SESSION['logged_user']->login; ?>
+        <a href="/includes/logout.php">Вийти</a>
+        <?php
+        else:
+        ?>
 		<div id="reg_auth">
-			<a href="authorization/index.html" titel="Війти в кабінет користувача">
+			<a href="authorization/index.php" titel="Війти в кабінет користувача">
 				<div class="btn">
 					Вхід
 				</div>
 			</a>
-			<a href="registration/index.html" title="Зареєструватися на сайті">
+			<a href="registration/index.php" title="Зареєструватися на сайті">
 				<div class="btn">
 					Реєстрація
 				</div>
 			</a>
 		</div>
+        <?php
+        endif;
+        ?>
 	</header>
 		<div class="wrapper">
 			<a href="">dxcfvgbhjk</a><br>
