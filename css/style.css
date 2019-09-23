@@ -5,6 +5,7 @@
 	padding: 0;
 }
 
+
 body {
 	width: 100%;
 	heidh: 100%;
@@ -23,16 +24,16 @@ a:hover {
 	text-decoration: none;
 	transition: all.6s ease;
 	-o-transition: all.6s ease;
-	-moz-transition: al.6s ease;
-	-webkit-transition: al.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
 }
 img{
 	max-width: 100%;
 	height: auto;
 	width: auto\9;/* ie8 */
-	-o-transition: all.3 ease-out;
-	-moz-transition: al.3s ease-out;
-	-webkit-transition: al.3s ease-out;
+	-o-transition: all.3s ease-out;
+	-moz-transition: all.3s ease-out;
+	-webkit-transition: all.3s ease-out;
 	border-radius: 5px;
 }
 hr{
@@ -69,6 +70,53 @@ header>div#logo>a>span
 	font-family: 'Suez One', serif;
 }
 
+.grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-family:  'Arial';
+	padding: 10px;
+}
+.grid div{
+	background-color: white;
+	border: 1px solid #9d9e9e;
+}
+
+.colors{
+	background-color: #9d9e9e;
+}
+.item{
+	max-width: 30%;
+	padding: 20px;
+	background-color: #9d9e9e;
+	text-align: center;
+	margin: 0px;
+}
+
+.left{float: left;}
+.right{float: right;}
+
+footer {
+	border-top: 2px solid silver;
+	margin-top: 10px;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+.page-wrap:after{
+       flex-grow: 1;
+}
+
+footer, .page-wrap:after{
+	height: 30px;
+}
+
+.page-wrap
+{
+
+}
+
 @media (min-width: 950px)
 {
 	header>div#logo>a>img {
@@ -85,7 +133,7 @@ header>div#logo>a>span
 	width: 30%;
 }
 }
-}
+
 @media(max-width: 949px) and(min-width:525px)
 {
 	header>div#logo>a>img {
@@ -103,7 +151,7 @@ header>div#logo>a>span
 	width: 50%;
 }
 }
-@media(max-width:524)
+@media( max-width: 524px)
 {
 	header>div#logo>a>img {
 	margin-left: 5%;
@@ -115,8 +163,6 @@ header>div#logo>a>span
 
 #reg_auth
 {
-	float: hidden;
-	width: none;
 }
 }
 #reg_auth>a
@@ -141,14 +187,14 @@ header>div#logo>a>span
 	border-radius: 5px;
 	padding: 5px 9px;
 	font-size: 1.2em;
-	background-color: rgb(236, 101, 80, 1);
+	background-color: rgba(236,101,80,1);
 	text-shadow: #454545 0 0 2px;
 }
 
 
 .wrapper{
 
-	display: grit;
+	display: grid;
 	grid-template-rows: repeat(6, 1fr);
 	grid-gap: 1em;
 	padding: 50px;

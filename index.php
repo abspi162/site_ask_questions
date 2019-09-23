@@ -17,7 +17,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="img/" rel="shortcut icon" type="image/x-icon">
 </head>
-<body>
+<body class="colors">
 	<header>
 		<div id="logo" >
 			<a href="index.php" title="На головну">
@@ -29,6 +29,13 @@ session_start();
         if (isset($_SESSION['logged_user'])) : ?>
         Привіт, <?php echo $_SESSION['logged_user']->login; ?>
         <a href="/includes/logout.php">Вийти</a>
+            <div id="reg_auth">
+                <a href="authorization/index.php" titel="Війти в кабінет користувача">
+                    <div class="btn">
+                        Добавити
+                    </div>
+                </a>
+            </div>
         <?php
         else:
         ?>
@@ -48,29 +55,21 @@ session_start();
         endif;
         ?>
 	</header>
-		<div class="wrapper">
-			<a href="">dxcfvgbhjk</a><br>
-			sdfcgvhbjnkm
-		</div>
-		<div class="wrapper">
-			<a href="">gvbhijnkm</a> <br>
-			fcvgbhjnkm
-		</div>
-		<div class="wrapper">
-			<a href="">cvgbhnjmk</a><br>
-			rfygvubhnjlkm
-		</div>
-		<div class="wrapper">
-			<a href="">dxcfvgbhjk</a><br>
-			sdfcgvhbjnkm
-		</div>
-		<div class="wrapper">
-			<a href="">dxcfvgbhjk</a><br>
-			sdfcgvhbjnkm
-		</div>
-		<div class="wrapper">
-			<a href="">dxcfvgbhjk</a><br>
-			sdfcgvhbjnkm
-		</div>
+<div class="grid">
+<div>
+    <a href="index.php" >
+ rftghujikl;
+    </a>
+</div>
+</div>
+
+<footer>
+    <span class="left">
+        Всі права захищені &copy; 2019
+    </span>
+    <span class="right">
+        Соц. кнопки
+    </span>
+</footer>
 </body>
 </html>
