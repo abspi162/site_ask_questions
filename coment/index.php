@@ -60,17 +60,22 @@ session_start();
         <img src="img/Вопрос.gif">
         <img src="img/v.gif">
     </div>
-    <div>
+    <div >
         <form enctype="multipart/form-data" method="post">
             <ul id="edit_tov">
-                <li>
-                    <label>Назва питання</label>
-                    <textarea id="editor" name="txt1" cols="100" rows="20"></textarea>
-                </li>
+
+                <label>Назва питання</label>
+                <textarea id="editor" name="txt1" cols="100" rows="20"></textarea>
+
             </ul>
-            <p align="right"><input type="submit" id="submit_form" name="submit_add" value="Добавити питання">
+            <p align="right"><input type="submit" id="submit_form" name="submit_add" value="Добавити відповідь">
             </p>
         </form>
+
+
+        <p class="p" align="left"> Назва користувача
+        </p>
+        <label class="p" "> відповідь</label>
     </div>
     <div>
         <img src="img/smile2.jpg">
@@ -86,6 +91,5 @@ session_start();
         Соц. кнопки
     </span>
 </footer>
-
 </body>
 </html>

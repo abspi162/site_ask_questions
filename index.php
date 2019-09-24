@@ -30,7 +30,7 @@ session_start();
         Привіт, <?php echo $_SESSION['logged_user']->login; ?>
         <a href="/includes/logout.php">Вийти</a>
             <div id="reg_auth">
-                <a href="authorization/index.php" titel="Війти в кабінет користувача">
+                <a href="add/ind.php" titel="Добавити питання">
                     <div class="btn">
                         Добавити
                     </div>
@@ -57,10 +57,21 @@ session_start();
 	</header>
 <div class="grid">
 <div>
-    <a href="index.php" >
- rftghujikl;
-    </a>
+    <img src="img/Вопрос.gif">
+    <img src="img/v.gif">
 </div>
+    <div >
+        <a href="coment\index.php" >
+          назву питання виводити
+        </a>
+
+
+
+    </div>
+    <div>
+        <img src="img/smile2.jpg">
+        <img src="img/smile1.jpg">
+    </div>
 </div>
 
 <footer>
