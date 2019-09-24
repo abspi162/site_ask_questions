@@ -61,12 +61,9 @@ session_start();
     <img src="img/v.gif">
 </div>
     <div >
-        <a href="coment\index.php" >
+        <a href="admin\index.php" >
           назву питання виводити
         </a>
-
-
-
     </div>
     <div>
         <img src="img/smile2.jpg">
