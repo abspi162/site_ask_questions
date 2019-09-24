@@ -5,6 +5,7 @@
 	padding: 0;
 }
 
+
 body {
 	width: 100%;
 	heidh: 100%;
@@ -23,16 +24,16 @@ a:hover {
 	text-decoration: none;
 	transition: all.6s ease;
 	-o-transition: all.6s ease;
-	-moz-transition: al.6s ease;
-	-webkit-transition: al.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
 }
 img{
 	max-width: 100%;
 	height: auto;
 	width: auto\9;/* ie8 */
-	-o-transition: all.3 ease-out;
-	-moz-transition: al.3s ease-out;
-	-webkit-transition: al.3s ease-out;
+	-o-transition: all.3s ease-out;
+	-moz-transition: all.3s ease-out;
+	-webkit-transition: all.3s ease-out;
 	border-radius: 5px;
 }
 hr{
@@ -68,6 +69,65 @@ header>div#logo>a>span
 	margin-left: 10px;
 	font-family: 'Suez One', serif;
 }
+.grid div{
+	background-color: #cccccc;
+	border: 1px solid #FDFFFF;
+	font-size: 18px;
+	font-family:  roboto;
+	color: white;
+	padding: 8px 15px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+.grid div:nth-child(1)
+{
+	height: 650px;
+	width: 300px;
+}
+.grid div:nth-child(2)
+{
+
+	height: 1024px;
+	width: 800px;
+}
+.grid div:nth-child(3)
+{
+	margin-left: 12px;
+	height: 650px;
+	width: 300px;
+}
+.colors{
+	background-color: #9d9e9e;
+}
+.item{
+	max-width: 30%;
+	padding: 20px;
+	background-color: #9d9e9e;
+	text-align: center;
+	margin: 0px;
+}
+
+.left{float: left;}
+.right{float: right;}
+
+footer {
+	border-top: 2px solid silver;
+	margin-top: 0px;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+.page-wrap:after{
+       flex-grow: 1;
+}
+
+footer, .page-wrap:after{
+	height: 30px;
+}
+
 
 @media (min-width: 950px)
 {
@@ -85,7 +145,7 @@ header>div#logo>a>span
 	width: 30%;
 }
 }
-}
+
 @media(max-width: 949px) and(min-width:525px)
 {
 	header>div#logo>a>img {
@@ -103,7 +163,7 @@ header>div#logo>a>span
 	width: 50%;
 }
 }
-@media(max-width:524)
+@media( max-width: 524px)
 {
 	header>div#logo>a>img {
 	margin-left: 5%;
@@ -115,13 +175,11 @@ header>div#logo>a>span
 
 #reg_auth
 {
-	float: hidden;
-	width: none;
 }
 }
 #reg_auth>a
 {
-	color: white;
+	color: #000000;
 }
 
 #reg_auth>a:hover>div.btn{
@@ -141,15 +199,52 @@ header>div#logo>a>span
 	border-radius: 5px;
 	padding: 5px 9px;
 	font-size: 1.2em;
-	background-color: rgb(236, 101, 80, 1);
+	background-color: rgba(236,101,80,1);
 	text-shadow: #454545 0 0 2px;
 }
 
 
 .wrapper{
 
-	display: grit;
+	display: grid;
 	grid-template-rows: repeat(6, 1fr);
 	grid-gap: 1em;
 	padding: 50px;
+}
+ #edit_tov{
+	 margin-top: 20px;
+ }
+ #edit_tov label{
+	 position: absolute;
+	 font: 15px sans-serif;
+	 margin-top: 6px;
+	 margin-left: 20px;
+	 color: #333333;
+ }
+.p{
+	margin-top: 20px;
+	color: #333333;
+}
+ #edit_tov textarea
+ {
+	 margin-top: 70px;
+	 margin-left: 170px;
+	 width: 400px;
+	 height: 80px;
+	 border: 1px solid #D4d4d4;
+ }
+#user
+{
+	color: white;
+	font-size: 20px;
+	margin-top:  20px;
+	margin-bottom: -30px;
+}
+#user:hover
+{
+	color: white;
+	font-size: 20px;
+	margin-top:  20px;
+	margin-bottom: -30px;
+	text-shadow: 3px 5px 6px #6C9, -1px -1px 2px #D9FFA7;
 }

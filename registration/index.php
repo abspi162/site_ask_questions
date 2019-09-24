@@ -63,9 +63,9 @@ if (isset($data['do_signup']))
     </div>
 
     <div class="content">
-		<input name="username" type="text" class="input username" value="<?php echo @$data['username']?>"  />
-		<input name="password" type="password" class="input password" value="<?php echo @$data['password']?>" />
-		<input name="email" type="email" class="input email" value="<?php echo @$data['email']?>" />
+		<input name="username" type="text" class="input username" placeholder="Логін" value="<?php echo @$data['username']?>"  />
+		<input name="password" type="password" class="input password" placeholder="Пароль" value="<?php echo @$data['password']?>" />
+		<input name="email" type="email" class="input email" placeholder="Email" value="<?php echo @$data['email']?>" />
     </div>
 
     <div class="footer">
