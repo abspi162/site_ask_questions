@@ -3,6 +3,9 @@ require "libs/rb.php";
 R::setup( 'mysql:host=localhost;dbname=askquestions',
     'root', '' );
 session_start();
+$data=$_POST;
+if (isset($data['nomer']))
+
 ?>
 <!DOCTYPE html>
 <html land="en">
@@ -17,7 +20,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="img/" rel="shortcut icon" type="image/x-icon">
 </head>
-<body>
+<body class="colors">
 	<header>
 		<div id="logo" >
 			<a href="index.php" title="На головну">
@@ -27,8 +30,15 @@ session_start();
 		</div>
         <?php
         if (isset($_SESSION['logged_user'])) : ?>
-        Привіт, <?php echo $_SESSION['logged_user']->login; ?>
-        <a href="/includes/logout.php">Вийти</a>
+        <div id="user">Привіт, <?php echo $_SESSION['logged_user']->login; ?>
+        <a href="/includes/logout.php">Вийти</a></div>
+            <div id="reg_auth">
+                <a href="add/ind.php" titel="Добавити питання">
+                    <div class="btn">
+                        Добавити
+                    </div>
+                </a>
+            </div>
         <?php
         else:
         ?>
@@ -48,29 +58,35 @@ session_start();
         endif;
         ?>
 	</header>
-		<div class="wrapper">
-			<a href="">dxcfvgbhjk</a><br>
-			sdfcgvhbjnkm
-		</div>
-		<div class="wrapper">
-			<a href="">gvbhijnkm</a> <br>
-			fcvgbhjnkm
-		</div>
-		<div class="wrapper">
-			<a href="">cvgbhnjmk</a><br>
-			rfygvubhnjlkm
-		</div>
-		<div class="wrapper">
-			<a href="">dxcfvgbhjk</a><br>
-			sdfcgvhbjnkm
-		</div>
-		<div class="wrapper">
-			<a href="">dxcfvgbhjk</a><br>
-			sdfcgvhbjnkm
-		</div>
-		<div class="wrapper">
-			<a href="">dxcfvgbhjk</a><br>
-			sdfcgvhbjnkm
-		</div>
+<div class="grid">
+<div>
+    <img src="img/Вопрос.gif">
+    <img src="img/v.gif">
+</div>
+    <div >
+    <?php
+            $capcha=0;
+            $questions=R::find('questions','capcha=?',[$capcha]);
+            foreach ($questions as $question)
+            echo ' 
+        <a href="coment/index.php?id='.$question->id.'" name="nomer">
+                '.$question->text.'<br>
+        </a>
+   ';?>
+    </div>
+    <div>
+        <img src="img/smile2.jpg">
+        <img src="img/smile1.jpg">
+    </div>
+</div>
+
+<footer>
+    <span class="left">
+        Всі права захищені &copy; 2019
+    </span>
+    <span class="right">
+        Соц. кнопки
+    </span>
+</footer>
 </body>
 </html>

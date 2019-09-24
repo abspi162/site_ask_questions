@@ -337,3 +337,9 @@ FOOTER
 	float: left;
 	display: block;
 }
+hr{
+	border: none;
+	background-color: red;
+	color: red;
+	height: 2px;
+}
