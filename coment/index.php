@@ -78,46 +78,59 @@ if (isset($data['submit_add']))
     ?>
 </header>
 <div class="grid">
-    <div>
+    <div class="a">
         <img src="../img/Вопрос.gif">
         <img src="../img/v.gif">
     </div>
     <div >
         <form enctype="multipart/form-data" method="post">
 
-
-                <label>
+            <ul id="edit_tov">
+                <li>
+                <p>
                     <?php
                     $questions=R::findOne('questions','id=?',[$_GET['id']]);
                     echo $questions->text.'<br>';
                     ?>
-                </label>
-                <?php
-                if (isset($_SESSION['logged_user'])) : ?>
-                    <ul id="edit_tov">
-                <textarea id="editor" name="txt1" cols="100" rows="20"></textarea>
+                </p>
+                    <?php
+                    if (isset($_SESSION['logged_user'])) : ?>
+                    <textarea id="editor" name="txt1" cols="100" rows="20"></textarea>
+                </li>
             </ul>
+
             <p align="right"><input type="submit" id="submit_form" name="submit_add" value="Добавити відповідь">
             </p>
             <?php
             else:
             ?>
-            <label>Зареєструйтесь або ввійдіть щоб дати відповідь.</label>
+                <ul id="edit_tov">
+                    <li>
+                    <p>
+                        Зареєструйтесь щоб дати відповідь!!!!
+                    </p>
+
+                    </li>
+                </ul>
+
             <?php
             endif;
             ?>
         </form>
+
         <?php
         $capcha=0;
         $asks=R::find('asks','idquestion=? AND capcha=?',[$_GET['id'],$capcha]);
-        foreach ($asks as $ask1)
+        foreach ($asks as $ask1){
+            $users=R::find('users','id=?',[$ask1->iduser_id]);
+        foreach ($users as $user)
             echo ' 
-        <p class="p" align="left"> '.$ask1->iduser_id.'<br>
+        <p class="p" align="left"> '.$user->login.'<br>
         </p>
         <label class="p" > '.$ask1->text.'<br></label>
-         ';?>
+         ';}?>
     </div>
-    <div>
+    <div class="a">
         <img src="../img/smile2.jpg">
         <img src="../img/smile1.jpg">
     </div>

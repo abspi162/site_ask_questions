@@ -79,7 +79,7 @@ if (isset($data['submit_add']))
     ?>
 </header>
 <div class="grid">
-    <div>
+    <div class="a">
         <img src="../img/Вопрос.gif">
         <img src="../img/v.gif">
     </div>
@@ -95,7 +95,7 @@ if (isset($data['submit_add']))
             </p>
         </form>
     </div>
-    <div>
+    <div class="a">
         <img src="../img/smile2.jpg">
         <img src="../img/smile1.jpg">
     </div>
