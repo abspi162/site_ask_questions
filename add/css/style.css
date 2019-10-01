@@ -235,3 +235,32 @@ footer, .page-wrap:after{
     height: 200px;
     border: 1px solid #D4d4d4;
 }
+
+input{
+    margin-top: 10px;
+    margin-right: 20px;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    color: black;
+    background-color: #EC6550;
+    border-bottom: none;
+}
+input:hover{
+    margin-top: 10px;
+    margin-right: 20px;
+    height: 35px;
+    width: 155px;
+    border-radius: 7px;
+    color: white;
+    background-color: #EC6550;
+    border-bottom: none;
+}
+
+#edit_tov>li>label{
+    color:#EC6550;
+}
+
+#edit_tov>li{
+    list-style: none;
+}

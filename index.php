@@ -31,7 +31,7 @@ if (isset($data['nomer']))
         <?php
         if (isset($_SESSION['logged_user'])) : ?>
         <div id="user">Привіт, <?php echo $_SESSION['logged_user']->login; ?>
-        <a href="/includes/logout.php">Вийти</a></div>
+        <a  href="/includes/logout.php">Вийти</a></div>
             <div id="reg_auth">
                 <a href="add/ind.php" titel="Добавити питання">
                     <div class="btn">
@@ -59,22 +59,25 @@ if (isset($data['nomer']))
         ?>
 	</header>
 <div class="grid">
-<div>
+<div class="a">
     <img src="img/Вопрос.gif">
     <img src="img/v.gif">
 </div>
-    <div >
+    <div class="name" >
+        <p align="center">Питання:</p>
     <?php
             $capcha=0;
             $questions=R::find('questions','capcha=?',[$capcha]);
             foreach ($questions as $question)
             echo ' 
-        <a href="coment/index.php?id='.$question->id.'" name="nomer">
-                '.$question->text.'<br>
-        </a>
+        <div id="link">
+                    <a href="coment/index.php?id='.$question->id.'"name="nomer">
+                            '.$question->text.'<br>
+                    </a>
+        </div>
    ';?>
     </div>
-    <div>
+    <div class="a">
         <img src="img/smile2.jpg">
         <img src="img/smile1.jpg">
     </div>
