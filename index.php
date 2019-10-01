@@ -66,7 +66,7 @@ if (isset($data['nomer']))
     <div class="name" >
         <p align="center">Питання:</p>
     <?php
-            $capcha=0;
+            $capcha=1;
             $questions=R::find('questions','capcha=?',[$capcha]);
             foreach ($questions as $question)
             echo ' 

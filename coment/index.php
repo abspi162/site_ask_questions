@@ -119,7 +119,7 @@ if (isset($data['submit_add']))
         </form>
 
         <?php
-        $capcha=0;
+        $capcha=1;
         $asks=R::find('asks','idquestion=? AND capcha=?',[$_GET['id'],$capcha]);
         foreach ($asks as $ask1){
             $users=R::find('users','id=?',[$ask1->iduser_id]);
