@@ -19,6 +19,8 @@ a {
 	-webkit-transition: al.6s ease;
 }
 
+
+
 a:hover {
 	color: #c34f25;
 	text-decoration: none;
@@ -27,6 +29,7 @@ a:hover {
 	-moz-transition: all.6s ease;
 	-webkit-transition: all.6s ease;
 }
+
 img{
 	max-width: 100%;
 	height: auto;
@@ -49,7 +52,10 @@ header {
 	background-color: #343434;
 	width: 99.4%;
 	padding: 0.3%;
-	border-bottom: 5px solid #59559a
+	border-bottom: 5px solid #59559a;
+	position: fixed;
+	top: 0;
+	opacity: 0.97;
 }
 
 header>div#logo>a>img {
@@ -58,6 +64,11 @@ header>div#logo>a>img {
 	float: left;
 	margin-left: 15%;
 }
+
+div.grid>div.a>img{
+	padding-top: 10px;
+}
+
 header>div#logo>a
 {
 	color: white;
@@ -80,22 +91,56 @@ header>div#logo>a>span
 .grid{
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
+	margin-top: 67px;
 }
 .grid div:nth-child(1)
 {
-	height: 650px;
+	height: 620px;
 	width: 300px;
 }
 .grid div:nth-child(2)
 {
-
-	height: 1024px;
 	width: 800px;
+	min-height: 850px;
+	height: auto;
+	border: none;
+}
+div.grid>div.name>a:hover{
+	  border-bottom: 1px solid #E0E0E0;
+	  color: black;
+  }
+div.grid>div.name>p{
+	background-color: #bbbcbc;
+	margin-top: 5px;
+	border: none;
+	border-radius: 10px;
+	position: center;
+	color: #fa713e;
+	font-family: Arial;
+	font-size: 40px;
+
+}
+div.grid>div.name>div#link{
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float:none;
+	min-height: 10px;
+	height: auto;
+	min-width: 10px;
+	width: auto;
+	border: none;
+	border-bottom: 2px solid #E0E0E0;
+}
+#link>a
+{
+	word-wrap: break-word;
+
 }
 .grid div:nth-child(3)
 {
 	margin-left: 12px;
-	height: 650px;
+	height: 525px;
 	width: 300px;
 }
 .colors{
@@ -114,7 +159,7 @@ header>div#logo>a>span
 
 footer {
 	border-top: 2px solid silver;
-	margin-top: 0px;
+
 }
 body{
 	display: flex;
@@ -224,10 +269,11 @@ footer, .page-wrap:after{
 .p{
 	margin-top: 20px;
 	color: #333333;
+	word-wrap: break-word;
 }
  #edit_tov textarea
  {
-	 margin-top: 70px;
+	 margin-top: 80px;
 	 margin-left: 170px;
 	 width: 400px;
 	 height: 80px;

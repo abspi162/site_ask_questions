@@ -90,6 +90,7 @@ header>div#logo>a>span
 {
     height: 1024px;
     width: 800px;
+    word-wrap: break-word;
 }
 .grid div:nth-child(3)
 {
@@ -204,7 +205,6 @@ footer, .page-wrap:after{
 
 
 .wrapper{
-
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 1em;
@@ -213,22 +213,53 @@ footer, .page-wrap:after{
 #edit_tov{
     margin-top: 20px;
 }
-#edit_tov label{
-    position: absolute;
-    font: 15px sans-serif;
-    margin-top: 6px;
-    margin-left: 20px;
-    color: #333333;
-}
-.p{
+#edit_tov>li>p{
+    font: 35px sans-serif;
     margin-top: 20px;
-    color: #333333;
+    margin-left: 20px;
+    color:#EC6550;
 }
-#edit_tov textarea
+
+#edit_tov>li>p{
+    word-wrap: break-word;
+}
+
+#edit_tov>li> textarea
 {
-    margin-top: 70px;
-    margin-left: 170px;
-    width: 400px;
-    height: 80px;
+    margin-top: 10px;
+    resize: none;
+    margin-left: 20px;
+    width: 780px;
+    height: 150px;
     border: 1px solid #D4d4d4;
 }
+
+input{
+    margin-top: 10px;
+    margin-right: 20px;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    color: black;
+    background-color: #EC6550;
+    border-bottom: none;
+}
+input:hover{
+    margin-top: 10px;
+    margin-right: 20px;
+    height: 35px;
+    width: 155px;
+    border-radius: 7px;
+    color: white;
+    background-color: #EC6550;
+    border-bottom: none;
+}
+
+#edit_tov>li{
+   word-wrap: break-word;
+}
+
+#edit_tov>li{ list-style: none;word-wrap: break-word;}
+
+
+

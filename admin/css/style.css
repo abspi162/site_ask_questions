@@ -84,3 +84,100 @@ body{
     margin-left: 201px;
     border-left: 1px solid #E0E0E0;
 }
+
+#user {
+    padding-top: 3px ;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+#user input{
+    margin-left: 680px;
+    font-size: 116%;
+    margin-right: 10px;
+}
+
+#user input:hover {
+    background-color: tomato;
+}
+
+#user2 #lbl{
+    margin-left: 10px;
+    font-size: 138%;
+}
+
+ #user2 label{
+    margin-left: 10px;
+    font-size: 138%;
+
+}
+
+ #user2 {
+     margin-left: 10px;
+     display: block;
+     float: left;
+     width: auto;
+     border-color: rgb(190, 190, 190);
+     border-style: solid;
+     margin-bottom: 5px;
+     margin-top: 5px;
+ }
+
+#lbl{
+    margin-left: 10px;
+    margin-right: 190px;
+    font-size: 130%;
+}
+
+#q2 label{
+    margin-left: 10px;
+    font-size: 150%;
+}
+#q1 form{
+
+}
+#q1 #q2{
+    display: block;
+    min-width: 50px;
+    width: auto;
+    margin-left: 5px;
+    border-color: rgb(190,190,190);
+    border-style: solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#question #dlq{
+    margin-left: 10px;
+    margin-right: 65%;
+    font-size: 116%;
+}
+#question #dlq:hover {
+    background-color: tomato;
+}
+#question #conf{
+    margin-left: 10px;
+    font-size: 116%;
+}
+#question #conf:hover {
+    background-color: green;
+}
+
+#answer a:link {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+#answer a {
+ color: black;
+    cursor: pointer;
+}
+
+#answer a:hover {
+    color: gray;
+}
+ #block{
+    margin-left: 20px;
+    font-size: 120%;
+}
+ #txt{
+     margin-left: 10px;
+ }

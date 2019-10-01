@@ -22,7 +22,7 @@ if (isset($data['submit_add']))
         header('Location: ../index.php');
     }else
     {
-        echo '<div style="color: red;">'.array_shift($errors).'</div><hr>';
+
     }
 }
 ?>
@@ -79,7 +79,7 @@ if (isset($data['submit_add']))
     ?>
 </header>
 <div class="grid">
-    <div>
+    <div class="a">
         <img src="../img/Вопрос.gif">
         <img src="../img/v.gif">
     </div>
@@ -88,14 +88,14 @@ if (isset($data['submit_add']))
             <ul id="edit_tov">
                 <li>
                     <label>Введіть питання:</label>
-                    <textarea id="editor" name="txt1" cols="100" rows="20"></textarea>
+                    <textarea id="editor" name="txt1" cols="100" rows="20" required="required"></textarea>
                 </li>
             </ul>
-            <p align="right"><input type="submit" id="submit_form" name="submit_add" value="Добавити питання">
+            <p align="right"><input  type="submit" id="submit_form" name="submit_add" value="Добавити питання" >
             </p>
         </form>
     </div>
-    <div>
+    <div class="a">
         <img src="../img/smile2.jpg">
         <img src="../img/smile1.jpg">
     </div>
