@@ -154,10 +154,12 @@ div.grid>div.name>div#link{
 	margin: 0px;
 }
 
-.left{float: left;}
-.right{float: right;}
+.left{float: left;
+}
+.right{float: right;margin-top: 15px}
 
 footer {
+
 	border-top: 2px solid silver;
 
 }
@@ -293,4 +295,11 @@ footer, .page-wrap:after{
 	margin-top:  20px;
 	margin-bottom: -30px;
 	text-shadow: 3px 5px 6px #6C9, -1px -1px 2px #D9FFA7;
+}
+footer>span>a>img{
+	float: right;
+	margin-right: 10px;
+	padding: 10px;
+	height: 30px;
+	width: 30px;
 }

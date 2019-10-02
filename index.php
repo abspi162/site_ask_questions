@@ -87,9 +87,18 @@ if (isset($data['nomer']))
     <span class="left">
         Всі права захищені &copy; 2019
     </span>
+
+    <span>
+        <a>
+        <img src="../img/youtube.png">
+            </a>
+        <a><img src="../img/facebook.png"></a>
+
+        <a><img src="../img/instagram.png"></a>
+    </span>
     <span class="right">
         Соц. кнопки
-    </span>
+        </span>
 </footer>
 </body>
 </html>
