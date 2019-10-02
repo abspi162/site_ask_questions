@@ -142,6 +142,7 @@ if (isset($data['submit_add']))
     </span>
     <span class="right">
         Соц. кнопки
+
     </span>
 </footer>
 </body>
