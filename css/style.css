@@ -294,3 +294,10 @@ footer, .page-wrap:after{
 	margin-bottom: -30px;
 	text-shadow: 3px 5px 6px #6C9, -1px -1px 2px #D9FFA7;
 }
+footer>span>a>img{
+	float: right;
+	margin-right: 10px;
+	padding: 10px;
+	height: 30px;
+	width: 30px;
+}
